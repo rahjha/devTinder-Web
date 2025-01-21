@@ -9,8 +9,10 @@
 - Create BrowserRouter > Routes > Route = / Body > RouteChildren
 - Create an Outlet in your Body Component
 - Create a footer
-
-
+- Create a login page
+- Install axios
+- CORS - install cors in backend => add middleware to with configuration origin, credentials
+- Whenever you're making API calls so pass axios => {withCredentials: true}
 
 
 Body
