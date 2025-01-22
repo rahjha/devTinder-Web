@@ -11,6 +11,7 @@ const Login = () =>{
     const [password, setPassword] = useState("");
     const dispatch = useDispatch();
     const navigate = useNavigate();
+    const [error, setError] = useState("");
 
     const handleLogin = async()=>{
         try{
@@ -23,7 +24,8 @@ const Login = () =>{
             dispatch(addUser(res.data));
             navigate("/feed");
         }catch(err){
-            console.err(err)
+            setError(err?.response?.data)
+            console.error(err)
         }
     };
     return(
@@ -43,6 +45,7 @@ const Login = () =>{
                         <input type="text" value={password} className="input input-bordered w-full max-w-xs" onChange={(e)=>setPassword(e.target.value)}/>
                         </label>
                     </div>
+                    <p className="text-red-600">{error}</p>
                     <div className="card-actions justify-center my-2">
                     <button className="btn btn-primary" onClick={handleLogin}>Login</button>
                     </div>
