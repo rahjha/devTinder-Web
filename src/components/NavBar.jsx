@@ -22,10 +22,20 @@ const NavBar = () =>{
     }
   };
 
+  const handleClick= () =>{
+    try{
+      if(!user){
+        navigate("/login");
+      }
+    }catch(err){
+      console.error(err);
+    }
+  }
+
   return(
         <div className="navbar bg-base-300">
         <div className="flex-1">
-          <Link to="/" className="btn btn-ghost text-xl">🧑‍💻 DevTinder</Link>
+          <Link onClick={handleClick} className="btn btn-ghost text-xl">🧑‍💻 DevTinder</Link>
         </div>
         {user &&(
         <div className="flex-none gap-2">

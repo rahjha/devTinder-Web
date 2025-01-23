@@ -23,6 +23,8 @@
 - If the token is not present, redirect user to login page
 - Logout
 - Profile page
+- get the feed and store the feed inside the redux store
+- build the user card on feed
 
 Body
     NavBar
