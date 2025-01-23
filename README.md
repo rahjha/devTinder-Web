@@ -25,6 +25,8 @@
 - Profile page
 - get the feed and store the feed inside the redux store
 - build the user card on feed
+- Edit profile feature
+- Show toast message upon saving the profile
 
 Body
     NavBar
