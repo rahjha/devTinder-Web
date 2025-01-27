@@ -27,6 +27,7 @@
 - build the user card on feed
 - Edit profile feature
 - Show toast message upon saving the profile
+- See all my connections
 
 Body
     NavBar
