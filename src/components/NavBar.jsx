@@ -23,11 +23,8 @@ const NavBar = () =>{
   };
 
   const handleClick= () =>{
-    console.log("handleClick called");
-    console.log(user);
     try{
       if(!user){
-        console.log("inside if");
         navigate("/login");
       }
     }catch(err){
